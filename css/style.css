@@ -45,7 +45,7 @@ body.home {
   padding: calc(1rem + env(safe-area-inset-top)) 1.5rem 1.75rem;
   background:
     linear-gradient(180deg, rgba(1, 30, 65, 0.15) 0%, rgba(1, 30, 65, 0.55) 55%, rgba(1, 30, 65, 0.95) 100%),
-    url("../img/okap.jpg") center / cover no-repeat,
+    url("../img/okap.png") center / cover no-repeat,
     var(--navy);
   color: #fff;
   border-radius: 0 0 2rem 2rem;
