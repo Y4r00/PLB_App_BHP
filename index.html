@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test BHP</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #011e41 0%, #0b3d73 55%, #1a5fa8 100%);
+      color: #fff;
+    }
+
+    .card {
+      text-align: center;
+      padding: 3rem 4rem;
+      border-radius: 1.5rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(8px);
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .badge {
+      display: inline-block;
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-bottom: 1.25rem;
+      border-radius: 50%;
+      background: #ffc20e;
+      color: #011e41;
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 4.5rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 800;
+      letter-spacing: 0.05em;
+    }
+
+    h1 span { color: #ffc20e; }
+
+    p {
+      margin-top: 0.75rem;
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge" aria-hidden="true">!</div>
+    <h1>Test <span>BHP</span></h1>
+    <p>Bezpieczeństwo i Higiena Pracy</p>
+  </main>
+</body>
+</html>
