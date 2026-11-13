@@ -7,76 +7,22 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>Test BHP</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-
-    html { -webkit-text-size-adjust: 100%; }
-
-    body {
-      min-height: 100vh;
-      /* dvh ignores the collapsing mobile browser toolbar */
-      min-height: 100dvh;
-      padding: env(safe-area-inset-top) 1.25rem env(safe-area-inset-bottom);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-      background: linear-gradient(135deg, #011e41 0%, #0b3d73 55%, #1a5fa8 100%);
-      color: #fff;
-    }
-
-    .card {
-      width: 100%;
-      max-width: 22rem;
-      text-align: center;
-      padding: 2.5rem 1.5rem;
-      border-radius: 1.5rem;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-      backdrop-filter: blur(8px);
-      animation: fadeIn 0.8s ease-out;
-    }
-
-    .badge {
-      display: inline-block;
-      width: 4.5rem;
-      height: 4.5rem;
-      margin-bottom: 1.25rem;
-      border-radius: 50%;
-      background: #ffc20e;
-      color: #011e41;
-      font-size: 2.5rem;
-      font-weight: 800;
-      line-height: 4.5rem;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 14vw, 3.5rem);
-      font-weight: 800;
-      letter-spacing: 0.05em;
-    }
-
-    h1 span { color: #ffc20e; }
-
-    p {
-      margin-top: 0.75rem;
-      font-size: 1rem;
-      opacity: 0.8;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <title>PLB Zabrze – BHP</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <main class="card">
-    <div class="badge" aria-hidden="true">!</div>
-    <h1>Test <span>BHP</span></h1>
-    <p>Bezpieczeństwo i Higiena Pracy</p>
-  </main>
+<body class="home">
+  <header class="hero">
+    <div class="hero__brand"><span class="hero__dot"></span>BHP</div>
+    <h1>Electrolux<br><span>Zabrze</span></h1>
+  </header>
+
+  <nav class="tiles">
+    <a class="tile" href="telefony.html" aria-label="Ważne telefony">
+      <img src="img/telefony.png" alt="Ważne telefony">
+    </a>
+    <a class="tile" href="odpady.html" aria-label="Gospodarka odpadami">
+      <img src="img/odpady-ikona.png" alt="Gospodarka odpadami">
+    </a>
+  </nav>
 </body>
 </html>
